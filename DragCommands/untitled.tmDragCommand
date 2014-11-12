@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+require 'time'
+
+STDIN.readlines do |line|
+	line.scan(/^(.*?)(?=&gt;app\[[^\:]\:)(.*)$/) do |time,body|
+		puts "[#{Time.parse(time).strftime('%B %d %r')}] =&gt; #{body}"
+	end
+end</string>
+	<key>draggedFileExtensions</key>
+	<array>
+		<string>txt</string>
+		<string>log</string>
+		<string>￿</string>
+		<string>￿</string>
+		<string>￿</string>
+	</array>
+	<key>keyEquivalent</key>
+	<string>^~@7</string>
+	<key>name</key>
+	<string>log-lines</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>uuid</key>
+	<string>7713FB4C-F879-4AA7-BDA6-3BD0B8159A46</string>
+</dict>
+</plist>

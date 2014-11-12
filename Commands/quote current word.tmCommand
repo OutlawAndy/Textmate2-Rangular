@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+str = STDIN.read
+space = str.reverse.index(/\s/)
+word = str.reverse[0...space].reverse
+beginning = str.reverse[space..-1].reverse
+print case word
+  when /\A"(.*)"([\.\,\:\;]?)\z/m; beginning + $1 + $2
+  when /\A'(.*)'([\.\,\:\;]?)\z/m; beginning + $1 + $2
+  else beginning + '"' + word[/(.*?)([\.\,\:\;]?)\Z/,1] + '"' + word[/(.*?)([\.\,\:\;]?)\Z/,2]
+end
+</string>
+	<key>input</key>
+	<string>line</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^'</string>
+	<key>name</key>
+	<string>quote current word</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>uuid</key>
+	<string>31948ED5-A239-478B-8F27-03ADCD7ADD46</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

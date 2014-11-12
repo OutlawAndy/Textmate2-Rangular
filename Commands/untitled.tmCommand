@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+ 
+require "tempfile"
+require "#{ENV['TM_SUPPORT_PATH']}/lib/textmate"
+require "#{ENV['TM_SUPPORT_PATH']}/lib/ui.rb"
+ 
+command = TextMate::UI.request_string(title: 'Filter Through Command', prompt: 'Command:', button1: 'Execute', button2: 'Cancel').to_s
+ 
+tempfile = Tempfile.new("tm-filter-command")
+tempfile.write(STDIN.read)
+tempfile.flush
+ 
+print %x{ cat #{tempfile.path} | #{command} }</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^~@9</string>
+	<key>name</key>
+	<string>filter through command</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceSelection</string>
+	<key>uuid</key>
+	<string>11BF3B9F-F860-47B6-AC5D-FCF3B9C18F8B</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

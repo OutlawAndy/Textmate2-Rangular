@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+selection = STDIN.read
+first_selection = !!( selection[1] == "i" )
+
+frmt = -&gt;(item){
+	if first_selection
+		" :#{item},"
+	else
+		" \"#{item.gsub(/['"]/,"")}\","
+	end
+}
+
+if selection[0] == "["
+	str = "%i( "
+	selection[/\[(.*)\]/m,1].split(",\n").each do |row|
+    str &lt;&lt; row.split(",").map(&amp;:strip).join(" ") &lt;&lt; "\n"
+	end
+  nstr = str.gsub(":","")
+  if nstr == str
+    print str.sub("%i( ","%w( ").gsub(/['"]/,"")[0..-2] + " )"
+  else
+    print nstr[0..-2] + " )"
+  end
+else
+	str = "["
+	selection[/%(?:i|w)[\(\[\|\&lt;]["']?(.*)["']?[\&gt;\|\]\)]\Z/m,1].split("\n").each do |row|
+    row.split(" ").each do |item|
+  		str &lt;&lt; frmt.(item)
+    end
+    str &lt;&lt; "\n"
+	end
+	print str[0...str.rindex(",")] + " ]"
+end</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^@\</string>
+	<key>name</key>
+	<string>%i( syms )</string>
+	<key>outputCaret</key>
+	<string>selectOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>uuid</key>
+	<string>0053D2BF-D472-4CF6-96C0-8DDCFA0D501B</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

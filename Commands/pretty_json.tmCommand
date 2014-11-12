@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+json = STDIN.read
+out = begin
+  `echo '#{json}' | /Users/Outlawandy/code/bin/as_pretty_json`
+rescue
+  json
+end
+
+puts out == "" ? json : out</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>~@j</string>
+	<key>name</key>
+	<string>pretty_json</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>uuid</key>
+	<string>90B2A9E4-9753-4A6D-97A5-6F3FA0AFC25B</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

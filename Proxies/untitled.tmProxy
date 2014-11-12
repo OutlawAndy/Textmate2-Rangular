@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{	foldingStartMarker = '^#&gt;&gt;&gt;&gt;$';
+	foldingStopMarker = '^#&lt;&lt;&lt;&lt;$';
+}</string>
+	<key>name</key>
+	<string>stitch-fold</string>
+	<key>scope</key>
+	<string>source.ruby, source.coffee</string>
+	<key>semanticClass</key>
+	<string>format.code.block.folding</string>
+	<key>tabTrigger</key>
+	<string>#&gt;</string>
+	<key>uuid</key>
+	<string>03412339-7150-41FF-B3BB-B873C458F34D</string>
+</dict>
+</plist>

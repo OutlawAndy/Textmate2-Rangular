@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${0:${TM_SELECTED_TEXT/\A(\s)?(.*)\Z/${1:?$2: $2}/m}}</string>
+	<key>keyEquivalent</key>
+	<string>$ </string>
+	<key>name</key>
+	<string>pre-selection padding</string>
+	<key>scope</key>
+	<string>dyn.selection &amp; -dyn.caret.mixed</string>
+	<key>uuid</key>
+	<string>65CB9278-2CFC-4BC5-9E32-32D3BDACBB08</string>
+</dict>
+</plist>

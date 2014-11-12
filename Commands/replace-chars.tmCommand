@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoScrollOutput</key>
+	<true/>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+# WOW! -- I am an idiot...
+# print input.each_line.with_object([]) { |line,ary| line_ary = []; line_ary &lt;&lt; line[/^(\s*)?(.*)$/,1]; ary &lt;&lt; line[/^(\s*)?(.*)$/,2].chomp.length.times.with_object(line_ary){|i,ary|ary&lt;&lt;"#"}.join("") }.join("\n")
+
+input = STDIN.read
+`echo "#{input.gsub('"','\"').chomp}" | pbcopy`
+print input.gsub(/\S/,"#")
+
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^m</string>
+	<key>name</key>
+	<string>hash-out selection</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>uuid</key>
+	<string>ADF7F676-88F8-4BF4-947D-E4107E2AACB2</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

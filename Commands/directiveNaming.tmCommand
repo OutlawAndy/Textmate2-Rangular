@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+input = STDIN.read
+output = ""
+if !!(input =~ /[-]/)
+	input.scan(/(.*?)([-])(.)|(.*)$/){ |s,_,c| output &lt;&lt; if !c then $&amp; else s + c.upcase end }
+elsif !!(input =~ /[A-Z]/)
+	input.scan(/(.*?)([A-Z])|(.*)$/){ |s,c| output &lt;&lt; if !c then $&amp; else s + "-" + c.downcase end }
+end
+print output
+
+# print case str = STDIN.read
+# 	when /_([a-z])/ then str.gsub(/_([a-z])/,$1.upcase)
+# 	when /[^_]([A-Z])/ then str.gsub(/([A-Z])/,"_"+$1.downcase)
+# 	else str
+# end
+</string>
+	<key>input</key>
+	<string>word</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>@5</string>
+	<key>name</key>
+	<string>directiveNaming</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>uuid</key>
+	<string>705766DF-D884-4D41-9E49-B8C8E04D79A5</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

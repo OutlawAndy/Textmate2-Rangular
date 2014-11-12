@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commands</key>
+	<array>
+		<dict>
+			<key>argument</key>
+			<string> </string>
+			<key>command</key>
+			<string>insertText:</string>
+		</dict>
+		<dict>
+			<key>argument</key>
+			<string> </string>
+			<key>command</key>
+			<string>insertText:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>moveBackward:</string>
+		</dict>
+	</array>
+	<key>keyEquivalent</key>
+	<string> </string>
+	<key>name</key>
+	<string>smart padding in scope</string>
+	<key>scope</key>
+	<string>source.ruby &amp; (L:punctuation.section.function.ruby &amp; R:punctuation.section.function.ruby), source.ruby &amp; (L:punctuation.section.scope.begin.ruby &amp; R:punctuation.section.scope.end.ruby), source.ruby &amp; (L:punctuation.section.array.begin.ruby &amp; R:punctuation.section.array.end.ruby)</string>
+	<key>uuid</key>
+	<string>AC8B6D29-BAD0-4BFD-9FA8-ACCCEDB3E9E8</string>
+</dict>
+</plist>
