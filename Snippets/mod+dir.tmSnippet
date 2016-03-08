@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>angular.module '${1:app}'
+
+.directive '${2:component}', -&gt;
+  restrict: '${3|E,A,EA|}'
+  replace: true${4:
+  scope:
+    $5
+  }
+  template: ${6:template}
+  link: (scope, el, attrs) -&gt;
+    $0
+
+$6 = """
+$7
+"""</string>
+	<key>name</key>
+	<string>mod+dir</string>
+	<key>scope</key>
+	<string>source.coffee</string>
+	<key>tabTrigger</key>
+	<string>mod.d</string>
+	<key>uuid</key>
+	<string>85D8294D-4AFD-4081-BFFC-A10DF65912ED</string>
+</dict>
+</plist>

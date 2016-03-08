@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def = \$q.defer()
+\$timeout -&gt;
+  $0
+, 0
+return def.promise</string>
+	<key>name</key>
+	<string>$q.defer()</string>
+	<key>scope</key>
+	<string>source.coffee</string>
+	<key>tabTrigger</key>
+	<string>$q</string>
+	<key>uuid</key>
+	<string>35C18A24-3398-44F7-829D-396562954171</string>
+</dict>
+</plist>

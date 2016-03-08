@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;script type="text/ng-template" ${1: id="${2:templateUrl}"}&gt;
+  ${0:$TM_SELECTED_TEXT}
+&lt;/script&gt;</string>
+	<key>keyEquivalent</key>
+	<string>@?</string>
+	<key>name</key>
+	<string>ng-template</string>
+	<key>scope</key>
+	<string>text.html,text.html.erb</string>
+	<key>tabTrigger</key>
+	<string>ngtemp</string>
+	<key>uuid</key>
+	<string>5B1AB622-91C8-4021-9B29-0D3E0A80797D</string>
+</dict>
+</plist>

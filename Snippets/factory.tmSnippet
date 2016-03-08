@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>.factory '${1:name}', ${3/(.+)/(?1:[)/}${3/(?:.+)/'/g}${3/,[ ]*/', '/g}${3/(?:.+)/', /g}${2: ($3) }-&gt;
+	$0
+
+	return {
+
+	}
+${3/(.+)/(?1:])/}</string>
+	<key>name</key>
+	<string>factory</string>
+	<key>scope</key>
+	<string>source.coffee</string>
+	<key>tabTrigger</key>
+	<string>.fac</string>
+	<key>uuid</key>
+	<string>D5634329-4EBA-404E-AC8C-71EB27E9B6A9</string>
+</dict>
+</plist>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>
+# $0</string>
+	<key>keyEquivalent</key>
+	<string></string>
+	<key>name</key>
+	<string>coffee comment doc</string>
+	<key>scope</key>
+	<string>source.coffee comment</string>
+	<key>uuid</key>
+	<string>1B717CFA-20CB-42A7-B9CD-CB43743627D2</string>
+</dict>
+</plist>

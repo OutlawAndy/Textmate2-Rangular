@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>.controller '${1:Name}Ctrl', [${2/(?:.+)/'/g}${2/,[ ]*/', '/g}${2/(?:.+)/', /g} (${2:\$scope}) -&gt;
+  $0
+]</string>
+	<key>name</key>
+	<string>controller</string>
+	<key>scope</key>
+	<string>source.coffee</string>
+	<key>tabTrigger</key>
+	<string>.ctrl</string>
+	<key>uuid</key>
+	<string>D9D4EC25-1889-4D36-8F36-49F2BDC4EF9A</string>
+</dict>
+</plist>
