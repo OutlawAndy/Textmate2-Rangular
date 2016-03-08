@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+puts "# #{ENV['TM_LINE_INDEX']}#{ENV['TM_CURSOR_INDEX']}"
+</string>
+	<key>keyEquivalent</key>
+	<string>^@9</string>
+	<key>name</key>
+	<string>cursor position</string>
+	<key>uuid</key>
+	<string>3DD12E96-240F-4FD3-B18E-E1351E6F09A5</string>
+</dict>
+</plist>

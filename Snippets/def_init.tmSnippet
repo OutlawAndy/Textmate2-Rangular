@@ -5,7 +5,9 @@
 	<key>content</key>
 	<string>def initialize${1/(?:.+)/ /g}$1
   ${2:${1/(?:.+)/@/g}${1/,[ ]*/, @/g}${1/(?:.+)/ = /g}${1/,[ ]*/, /g}}
-end$0</string>
+end
+${3:attr_reader ${1/(?:.+)/:/g}${1/,[ ]*/, :/g}}
+$0</string>
 	<key>name</key>
 	<string>def_init</string>
 	<key>scope</key>

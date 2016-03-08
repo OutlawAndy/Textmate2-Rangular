@@ -149,7 +149,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#DFDFDF</string>
+				<string>#0AFFB7</string>
 			</dict>
 		</dict>
 		<dict>
@@ -656,6 +656,54 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>BUG comments</string>
+			<key>scope</key>
+			<string>comment.line.* storage.type.class.bug</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#FF16487A</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>GTD notes</string>
+			<key>scope</key>
+			<string>comment.line.* storage.type.class.gtd</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#15A9BEBB</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>done GTD notes</string>
+			<key>scope</key>
+			<string>comment.line.* storage.type.class.gtd.done</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#36FFC053</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>BUG colon</string>
+			<key>scope</key>
+			<string>comment.line.* storage.type.class.*.punct</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#C2FF0077</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Regular Expressions</string>
 			<key>scope</key>
 			<string>string.regexp.classic</string>
@@ -744,6 +792,19 @@
 			<dict>
 				<key>foreground</key>
 				<string>#E78C45</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>coffee heredoc (embedded html)</string>
+			<key>scope</key>
+			<string>source.coffee string.quoted.double.heredoc</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#2B4B5422</string>
+				<key>foreground</key>
+				<string>#C9E4EFAA</string>
 			</dict>
 		</dict>
 		<dict>
@@ -853,7 +914,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#7E96AB</string>
+				<string>#91AFC9</string>
 			</dict>
 		</dict>
 	</array>

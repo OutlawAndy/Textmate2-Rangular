@@ -5,8 +5,19 @@
 	<key>commands</key>
 	<array>
 		<dict>
+			<key>argument</key>
+			<dict>
+				<key>action</key>
+				<string>findNext</string>
+				<key>findString</key>
+				<string>(?&lt;=")|(?&lt;=')|(?&lt;=\))</string>
+				<key>regularExpression</key>
+				<true/>
+				<key>replaceString</key>
+				<string></string>
+			</dict>
 			<key>command</key>
-			<string>moveForward:</string>
+			<string>findWithOptions:</string>
 		</dict>
 	</array>
 	<key>keyEquivalent</key>
@@ -14,7 +25,7 @@
 	<key>name</key>
 	<string>closing-puntuation</string>
 	<key>scope</key>
-	<string>punctuation.*.*.end</string>
+	<string>string.quoted</string>
 	<key>uuid</key>
 	<string>01B64755-08C4-4C47-A4CD-E3570FCB88FC</string>
 </dict>
