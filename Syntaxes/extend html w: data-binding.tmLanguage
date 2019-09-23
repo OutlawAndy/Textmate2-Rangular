@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>html</string>
+	</array>
+	<key>name</key>
+	<string>extend html w/ data-binding</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>&gt;</string>
+			<key>end</key>
+			<string>&lt;</string>
+			<key>include</key>
+			<string>#data-binding</string>
+			<key>name</key>
+			<string>content.text</string>
+		</dict>
+	</array>
+	<key>repository</key>
+	<dict>
+		<key>data-binding</key>
+		<dict>
+			<key>begin</key>
+			<string>\{\{</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.databinding.begin.html</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\}\}</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.databinding.end.html</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>databinding.html</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.js</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>scopeName</key>
+	<string>text.html.basic</string>
+	<key>uuid</key>
+	<string>FED57E1E-1789-45D9-94BC-649FFEDE98B9</string>
+</dict>
+</plist>

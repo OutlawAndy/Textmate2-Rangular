@@ -29,68 +29,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Markdown</string>
-			<key>scope</key>
-			<string>text.html.markdown -source.*</string>
-			<key>settings</key>
-			<dict>
-				<key>background</key>
-				<string>#F2F2F2</string>
-				<key>caret</key>
-				<string>#888888</string>
-				<key>fontName</key>
-				<string>monofur</string>
-				<key>fontSize</key>
-				<string>22</string>
-				<key>foreground</key>
-				<string>#3C3C3C</string>
-				<key>invisibles</key>
-				<string>#F2F2F2</string>
-				<key>lineHighlight</key>
-				<string>#EAF3FC</string>
-				<key>selection</key>
-				<string>#A19FE0</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>markdown-syms</string>
-			<key>scope</key>
-			<string>text.html.markdown punctuation.definition</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#C16400</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>markdown Bold</string>
-			<key>scope</key>
-			<string>markup.bold.markdown</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>BOLD</string>
-				<key>foreground</key>
-				<string>#222222</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>markdown Bold</string>
-			<key>scope</key>
-			<string>markup.italic.markdown</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>ITALIC</string>
-				<key>foreground</key>
-				<string>#222222</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>base</string>
 			<key>scope</key>
 			<string>text -source.*</string>
@@ -634,6 +572,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Angular Attributes</string>
+			<key>scope</key>
+			<string>entity.other.attribute-name.angular</string>
+			<key>settings</key>
+			<dict>
+				<key>fontweight</key>
+				<string>light</string>
+				<key>foreground</key>
+				<string>#8E378D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>embedded code</string>
 			<key>scope</key>
 			<string>meta.embedded.line.ruby source.ruby - punctuation.section.embedded.*</string>
@@ -915,6 +866,158 @@
 			<dict>
 				<key>foreground</key>
 				<string>#91AFC9</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown</string>
+			<key>scope</key>
+			<string>text.html.markdown -source.*</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#FFF</string>
+				<key>caret</key>
+				<string>#0054B6</string>
+				<key>foreground</key>
+				<string>#3F3F3F</string>
+				<key>lineHighlight</key>
+				<string>#EAF3FC</string>
+				<key>selection</key>
+				<string>#A19FE0</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown MarkUp</string>
+			<key>scope</key>
+			<string>text.html.markdown markup.*</string>
+			<key>settings</key>
+			<dict>
+				<key>fontName</key>
+				<string>monofur</string>
+				<key>fontSize</key>
+				<string>22</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown Headings</string>
+			<key>scope</key>
+			<string>text.html.markdown markup.heading.*.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>fontName</key>
+				<string>monofur</string>
+				<key>fontSize</key>
+				<string>22</string>
+				<key>fontWeight</key>
+				<string>BOLD</string>
+				<key>foreground</key>
+				<string>#000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown link</string>
+			<key>scope</key>
+			<string>markup.underline.link.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#979797</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown Headings</string>
+			<key>scope</key>
+			<string>text.html.markdown markup.heading.1.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>fontSize</key>
+				<string>26</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown Headings</string>
+			<key>scope</key>
+			<string>text.html.markdown markup.heading.2.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>fontSize</key>
+				<string>24</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown Headings</string>
+			<key>scope</key>
+			<string>text.html.markdown markup.heading.3.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>fontSize</key>
+				<string>22</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown Headings</string>
+			<key>scope</key>
+			<string>text.html.markdown markup.heading.4.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>fontSize</key>
+				<string>20</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown Headings</string>
+			<key>scope</key>
+			<string>text.html.markdown markup.heading.5.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>fontSize</key>
+				<string>18</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>markdown-syms</string>
+			<key>scope</key>
+			<string>text.html.markdown punctuation.definition</string>
+			<key>settings</key>
+			<dict>
+				<key>fontSize</key>
+				<string>20</string>
+				<key>foreground</key>
+				<string>#0492B8</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>markdown Bold</string>
+			<key>scope</key>
+			<string>markup.bold.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>BOLD</string>
+				<key>fontweight</key>
+				<string>BOLD</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>markdown Italic</string>
+			<key>scope</key>
+			<string>markup.italic.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>ITALIC</string>
 			</dict>
 		</dict>
 	</array>

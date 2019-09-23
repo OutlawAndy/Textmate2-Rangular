@@ -61,6 +61,10 @@
 					<key>include</key>
 					<string>text.html.basic</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#data-binding</string>
+				</dict>
 			</array>
 		</dict>
 	</array>
@@ -73,16 +77,24 @@
 				<dict>
 					<key>begin</key>
 					<string>\#\{</string>
-					<key>captures</key>
+					<key>beginCaptures</key>
 					<dict>
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.section.embedded.coffee</string>
+							<string>punctuation.definition.interpolated.begin.coffee</string>
 						</dict>
 					</dict>
 					<key>end</key>
 					<string>\}</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.interpolated.end.coffee</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>source.coffee.embedded.source</string>
 					<key>patterns</key>

@@ -25,7 +25,7 @@
 	<key>name</key>
 	<string>html-quick-navigagte</string>
 	<key>scope</key>
-	<string>text.html</string>
+	<string>text.html, source.coffee string.quoted.double.heredoc.coffee</string>
 	<key>uuid</key>
 	<string>62585820-4B0D-4A4F-ADD1-795EB6FD0352</string>
 </dict>

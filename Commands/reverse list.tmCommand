@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+list = eval STDIN.read
+
+print list.reverse</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>reverse list</string>
+	<key>uuid</key>
+	<string>9C7089E1-D892-45B4-809D-7991F437E174</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;%= asset_path(${TM_SELECTED_TEXT})%&gt;</string>
+	<key>keyEquivalent</key>
+	<string>^&gt;</string>
+	<key>name</key>
+	<string>wrap url in asset_path</string>
+	<key>scope</key>
+	<string>source.scss</string>
+	<key>uuid</key>
+	<string>DF214B47-C3FA-467D-B17F-C00A85167E1D</string>
+</dict>
+</plist>
